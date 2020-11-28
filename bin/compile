@@ -81,7 +81,7 @@ elif echo "$minecraft_version" | grep -q '^1\.13.*$'; then
 elif echo "$minecraft_version" | grep -q '^1\.14.*$'; then
   minecraft_uuid="${MINECRAFT_UUID:="d0d0fe2b1dc6ab4c65554cb734270872b72dadd6"}"
   minecraft_url="https://cdn.getbukkit.org/spigot/spigot-${minecraft_version}.jar"
-if echo "$minecraft_version" | grep -q '^1\.14.4$'; then
+elif echo "$minecraft_version" | grep -q '^1\.14.4$'; then
   minecraft_uuid="${MINECRAFT_UUID:="d0caafb8438ebd206f99930cfaecfa6c9a13dca0"}"
   minecraft_url="https://cdn.getbukkit.org/spigot/spigot-${minecraft_version}.jar"
 else
