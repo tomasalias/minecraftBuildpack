@@ -57,8 +57,8 @@ export PYTHONPATH="\$HOME/.apt/usr/lib/python2.7/dist-packages"
 export SCREENDIR="\$HOME/.apt/var/run/screen"
 EOF
 
-for DEB in "$(ls -1 "$APT_CACHE_DIR"/archives/*.deb)"; do
-  dpkg -x "$DEB" "$BUILD_DIR"/.apt/
+for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
+  dpkg -x $DEB $BUILD_DIR/.apt/
 done
 
 echo -n "-----> Installing ngrok... "
