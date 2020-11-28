@@ -41,7 +41,7 @@ apt-get $APT_OPTIONS -y --allow -d install --reinstall s3cmd | indent
 
 echo "-----> Installing screen... "
 apt-get $APT_OPTIONS update -y | indent
-apt-get $APT_OPTIONS -y --allow-downgrades --allow-remove-essential --allow-change-held-packages -d install --reinstall screen | indent
+apt-get $APT_OPTIONS -y --allow --allow-downgrades --allow-remove-essential --allow-change-held-packages -d install --reinstall screen | indent
 mkdir -p $BUILD_DIR/.apt/var/run/screen
 
 mkdir -p $BUILD_DIR/.profile.d
