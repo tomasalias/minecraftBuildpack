@@ -14,8 +14,6 @@ echo "Starting ngrok..."
 eval "$ngrok_cmd | tee ngrok.log &"
 ngrok_pid=$!
 
-
-
 # Do an inline sync first, then start the background job
 echo "Starting sync..."
 bin/sync
