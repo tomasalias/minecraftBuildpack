@@ -71,7 +71,7 @@ Create a Dropbox account.
 Copy your Dropbox access token following these [instructions](https://blogs.dropbox.com/developers/2014/05/generate-an-access-token-for-your-own-account/).
 
 ```
-$ heroku conig:set DROPBOX_ACCESS_TOKEN=xxx
+$ heroku config:set DROPBOX_ACCESS_TOKEN=xxx
 ```
 
 The buildpack will sync your world to the bucket every 60 seconds, but this is configurable by setting the `AWS_SYNC_INTERVAL` config variable
